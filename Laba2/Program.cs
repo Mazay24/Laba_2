@@ -19,14 +19,14 @@ namespace Laba2
             for (int i = 1; i < array.Length; i++)
             {
                 int k = array[i];
-                int zxc = i - 1;
+                int j = i - 1;
 
-                while (zxc >= 0 && array[zxc] > k)
+                while (j >= 0 && array[j] > k)
                 {
-                    array[zxc + 1] = array[zxc];
-                    zxc--;
+                    array[j + 1] = array[j];
+                    j--;
                 }
-                array[zxc + 1] = k;
+                array[j + 1] = k;
             }
 
             Console.WriteLine();
