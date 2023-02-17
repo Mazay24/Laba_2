@@ -6,13 +6,15 @@ namespace Laba2
     {
         static void Main(string[] args)
         {
-            int[] array = new int[5];
+            Console.WriteLine("Введите размерность массива: ");
+            int lenght = Convert.ToInt32(Console.ReadLine());
+            int[] array = new int[lenght];
             Random rand = new Random();
             Console.Write("Первоначальный массив: ");
-            for (int qq = 0; qq < 5; qq++)
+            for (int i = 0; i < lenght; i++)
             {
-                array[qq] = rand.Next(1, 6);
-                Console.Write(array[qq] + " , ");
+                array[i] = rand.Next(-1, 14);
+                Console.Write(array[i] + " , ");
             }
 
 
@@ -42,4 +44,3 @@ namespace Laba2
 }
         
     
-
